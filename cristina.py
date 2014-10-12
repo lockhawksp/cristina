@@ -119,7 +119,7 @@ class Finder(object):
     pass
 
 
-class V2exJobFinder(object):
+class V2exJobFinder(Finder):
 
     def __init__(self, filters=()):
         self.__api = V2exApi()
