@@ -137,7 +137,6 @@ class V2exJobFinder(Finder):
         for job_dict in job_dict_list:
             job = V2exJob.from_dict(job_dict)
             if self.__job_accepted(job):
-                print(job.url, job.summary)
                 jobs.append(job)
 
         return jobs
